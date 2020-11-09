@@ -18,6 +18,7 @@ app.get('*', (req, res, next) => {
     res.status(404).send("Page Not Found!");
 });
 
-app.listen(3000, () => {
+const PORT = process.env.port || 3000;
+app.listen(PORT, () => {
     console.log("App Started!");
 })
