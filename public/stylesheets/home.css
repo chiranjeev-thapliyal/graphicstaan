@@ -774,7 +774,7 @@ nav .logo img {
 /* -------------------------------------------- HEADER SECTION ------------------------------------------ */
 
 header{
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   /* padding: 1rem; */
   z-index: 1;
