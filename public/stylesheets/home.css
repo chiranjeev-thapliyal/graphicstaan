@@ -21,7 +21,6 @@ body{
   display: fixed;
   left: 0;
   overflow-x: hidden;
-  --navbar-height: 6rem;
 }
 
 .light_mode{
@@ -76,6 +75,12 @@ section{
   min-height: 100vh;
   padding: 1rem;
   width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+  section{
+    height: min-content;
+  }
 }
 
 .gradient-background{
@@ -545,7 +550,7 @@ display: flex;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
 }
 
 /*Styling logo*/
@@ -668,7 +673,7 @@ nav .logo img {
 @media screen and (max-width: 800px){
   nav{
       position: fixed;
-      z-index: 3;
+      z-index: 100;
       color: var(--white-text);
   }
   .hamburger{
@@ -794,6 +799,8 @@ header > .bg-video > .video2{
   width: 100%;
 }
 
+
+
 /* -------------------------------------------- HEADER SECTION ------------------------------------------ */
 
 /* -------------------------------------------- ABOUT SECTION ------------------------------------------ */
@@ -803,7 +810,7 @@ header > .bg-video > .video2{
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   z-index: 2;
 }
 
@@ -884,14 +891,15 @@ header > .bg-video > .video2{
 }
 
 @media only screen and (max-width: 780px){
-
+  .about > div{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px){
   .about{
     flex-direction: column-reverse;
     align-items: center;
-    
   }
   .about:nth-child(2n){
     flex-direction: column-reverse;
@@ -900,6 +908,7 @@ header > .bg-video > .video2{
     width: 100%;
     text-align: center;
   }
+
 }
 
 @media only screen and (max-width: 350px){
@@ -1076,6 +1085,33 @@ background: linear-gradient(160deg, var(--primary-color), var(--primary-color-da
               color: var(--black-text);
             }
 
+            
+@media only screen and (max-width: 700px){
+
+  .features{
+    flex-direction: column;
+    height: min-content;
+  }
+
+  #mobile{display: none;}
+
+  .features > div > .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .features > .features-right > .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+}
 
 
   /* ---------------------------------------------- FEATURES SECTION -------------------------------------------- */
@@ -1889,6 +1925,12 @@ bottom: 0;
       /* font: normal 36px 'Cookie', cursive; */
       margin: 0;
   }
+
+  @media only screen and (max-width:500px){
+    .footer-distributed h3{
+      font-size: var(--medium-font-size);
+    }
+  }
    
   .footer-distributed h3 span{
       color:  var(--white-text);
@@ -1910,7 +1952,7 @@ bottom: 0;
    
   .footer-distributed .footer-company-name{
       color:  var(--black-text);
-      font-size: 14px;
+      font-size: var(--small-font-size);
       font-weight: normal;
       margin: 0;
   }
