@@ -12,39 +12,7 @@
     <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
     <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
   </div> -->
-  <div class="slider">
-    <div class="slider__slide slider__slide--active" data-slide="1">
-      <div class="slider__wrap">
-        <div class="slider__back"></div>
-      </div>
-      <div class="slider__inner">
-        <div class="slider__content">
-          <h1>Android App <br> Development </h1><a class="go-to-next">next</a>
-        </div>
-      </div>
-    </div>
-    <div class="slider__slide" data-slide="2">
-      <div class="slider__wrap">
-        <div class="slider__back"></div>
-      </div>
-      <div class="slider__inner">
-        <div class="slider__content">
-          <h1>IOS App <br> Development</h1><a class="go-to-next">next</a>
-        </div>
-      </div>
-    </div>
-    <div class="slider__slide" data-slide="3">
-      <div class="slider__wrap">
-        <div class="slider__back"></div>
-      </div>
-      <div class="slider__inner">
-        <div class="slider__content">
-          <h1>Mobile Game <br> Development</h1><a class="go-to-next">next</a>
-        </div>
-      </div>
-    </div>
-    <div class="slider__indicators"></div>
-  </div><a class="sig" href="http://nathan.tokyo" target="_blank">NATHAN.TOKYO</a>
+  <%- include('../utility/slider', {images:["/images/app/app1.jpg", "/images/app/mobile-head.jpg", "/images/app/mobile-phone-3d.jpg"],title:["Android App", "iOS App", "Mobile Game"], br:["Developer","Developer", "Developer"]}) %> 
 </header>
 
 <section class="about">
