@@ -4,14 +4,47 @@
 />`]}) %> <%- include('../layout/navbar') %>
 
 <header>
-  <div class="glider">
+  <!-- <div class="glider"> -->
     <!-- <div><img src="/images/app/app1.jpg" alt="" /></div> -->
+    <!-- <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
     <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
     <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
     <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
     <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
-    <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
-  </div>
+  </div> -->
+  <div class="slider">
+    <div class="slider__slide slider__slide--active" data-slide="1">
+      <div class="slider__wrap">
+        <div class="slider__back"></div>
+      </div>
+      <div class="slider__inner">
+        <div class="slider__content">
+          <h1>Android App <br> Development </h1><a class="go-to-next">next</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider__slide" data-slide="2">
+      <div class="slider__wrap">
+        <div class="slider__back"></div>
+      </div>
+      <div class="slider__inner">
+        <div class="slider__content">
+          <h1>IOS App <br> Development</h1><a class="go-to-next">next</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider__slide" data-slide="3">
+      <div class="slider__wrap">
+        <div class="slider__back"></div>
+      </div>
+      <div class="slider__inner">
+        <div class="slider__content">
+          <h1>Mobile Game <br> Development</h1><a class="go-to-next">next</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider__indicators"></div>
+  </div><a class="sig" href="http://nathan.tokyo" target="_blank">NATHAN.TOKYO</a>
 </header>
 
 <section class="about">
@@ -118,6 +151,28 @@
   </div>
 </section>
 
-<%- include('../layout/footer', {scripts:[` `, `
-<script></script>
+<%- include('../layout/footer', {scripts:[`<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>`,``, `
+<script>$(document).ready(function(){
+  for (var i=1; i <= $('.slider__slide').length; i++){
+    $('.slider__indicators').append('<div class="slider__indicator" data-slide="'+i+'"></div>')
+  }
+  setTimeout(function(){
+    $('.slider__wrap').addClass('slider__wrap--hacked');
+  }, 1000);
+})
+
+function goToSlide(number){
+  $('.slider__slide').removeClass('slider__slide--active');
+  $('.slider__slide[data-slide='+number+']').addClass('slider__slide--active');
+}
+
+$('.slider__next, .go-to-next').on('click', function(){
+  var currentSlide = Number($('.slider__slide--active').data('slide'));
+  var totalSlides = $('.slider__slide').length;
+  currentSlide++
+  if (currentSlide > totalSlides){
+    currentSlide = 1;
+  }
+  goToSlide(currentSlide);
+})</script>
 `]}) %>

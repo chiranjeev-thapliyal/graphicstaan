@@ -114,6 +114,7 @@ header > .bg-video > .video2 {
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 3px 3px rgb(163, 163, 163);
+  padding-left: 3rem;
 }
 
 @-webkit-keyframes floating {
