@@ -45,7 +45,7 @@ header > .bg-video > .video2 {
 
 @media only screen and (max-width: 600px) {
   header{
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 6rem;
   }
 
