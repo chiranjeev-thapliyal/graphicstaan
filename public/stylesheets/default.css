@@ -50,14 +50,14 @@ body{
   }
   
   .dark_mode{
-    --primary-color: #263238;
+    --primary-color: #17151b;
     --primary-color-light:#707070;
     --primary-color-dark:#000a12;
     --secondary-color: #0fb0dd;
     --secondary-color-light:#61DAFB;
     --secondary-color-dark: #006480;
     --black-text: #fff;
-    --white-text: rgb(46, 46, 46);
+    --white-text:#17151b;
     background-color: var(--white-text);
   }
   
