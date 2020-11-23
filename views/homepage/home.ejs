@@ -1,0 +1,13 @@
+<%- include('../layout/boilerplate', {title:'GRAPHICSTAAN | APP | WEB | GRAPHICS | LOGO',stylesheets: ['<link rel="stylesheet" type="text/css" href="/stylesheets/home.css">']}) %>
+<%- include('../layout/navbar.ejs') %>
+<%- include('header.ejs') %>
+<div class="gradient-background">
+    <%- include('about', {id:'about1',title: 'bring your shop online',img: 'post_1.png'}) %>
+    <%- include('about', {id:'about2',title: 'connect with potential customers',img: 'web_template.png'}) %>
+    <%- include('about', {id:'about3',title: 'get in the digital world',img: 'digital_world.svg'}) %>
+    <%- include('features.ejs') %>
+    <%- include('contact.ejs') %>
+    <%- include('testimonial.ejs') %>
+    <%- include('team.ejs') %>
+</div>
+<%- include('../layout/footer.ejs', {scripts:['<script src="/scripts/testimonial.js"></script>']} ) %>  

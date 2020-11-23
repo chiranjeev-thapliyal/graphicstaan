@@ -10,7 +10,11 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 
 app.get('/', (req, res, next) => {
-    res.render('home');
+    res.render('homepage/home');
+});
+
+app.get('/:service/:part', (req, res, next) => {
+    res.render(`${req.params.service}/${req.params.part}`);
 });
 
 app.get('*', (req, res, next) => {

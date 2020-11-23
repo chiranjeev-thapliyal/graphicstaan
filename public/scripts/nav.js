@@ -14,18 +14,18 @@ hamburger.addEventListener('click', ()=>{
 });
 
 
-const body = document.querySelector('body');
-const mode = document.querySelector('.toggleMode');
-mode.addEventListener('click', () => {
-    body.classList.toggle("light_mode");
-    body.classList.toggle("dark_mode");
-    var txt = mode.innerText;
-    if (txt === "Dark Mode") {
-        mode.innerHTML = "Light Mode";
-    } else {
-        mode.innerHTML = "Dark Mode";
-    }
-})
+// const body = document.querySelector('body');
+// const mode = document.querySelector('.toggleMode');
+// mode.addEventListener('click', () => {
+//     body.classList.toggle("light_mode");
+//     body.classList.toggle("dark_mode");
+//     var txt = mode.innerText;
+//     if (txt === "Dark Mode") {
+//         mode.innerHTML = "Light Mode";
+//     } else {
+//         mode.innerHTML = "Dark Mode";
+//     }
+// })
 
 var navbar = document.querySelector('nav')
 
