@@ -1166,6 +1166,9 @@ header > .bg-video > .video2 {
   color: var(--black-text);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 9rem;
+height: 9rem;
+object-fit: cover;
 }
 .snip1447 .follow {
   margin-right: 6%;
