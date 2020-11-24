@@ -57,7 +57,7 @@ body{
     --secondary-color-light:#61DAFB;
     --secondary-color-dark: #006480;
     --black-text: #fff;
-    --white-text:#17151b;
+    --white-text: #17151b;
     background-color: var(--white-text);
   }
   
@@ -597,13 +597,16 @@ nav{
     margin: 0 0.7vw;
     font-size: var(--small-font-size);
     color: var(--black-text);
+    transition: all .5s;
   }
   
   .navbar-scrolled{
     background-color: var(--white-text);  
   }
   .nav-links li a:hover {
-    color: var(--primary-color-light);
+    color: var(--secondary-color);
+    /* font-family: var(--font-family-secondary); */
+    /* font-weight: bold; */
   }
   .nav-links li {
     position: relative;
@@ -613,7 +616,7 @@ nav{
     display: block;
     height: 3px;
     width: 0%;
-    background-color: var(--primary-color-light);
+    color: var(--secondary-color);
     position: absolute;
     bottom: 0;
     -webkit-transition: all ease-in-out 250ms;
@@ -828,7 +831,7 @@ nav{
 }
  
 .footer-distributed h3 span{
-    color:  var(--white-text);
+    color:  var(--secondary-color);
 }
  
  
@@ -858,7 +861,7 @@ nav{
 }
  
 .footer-distributed .footer-center i{
-    background-color:  var(--white-text);
+    background-color: var(--secondary-color);
     color: var(--black-text);
     font-size: 25px;
     width: 38px;
@@ -923,7 +926,8 @@ nav{
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color:  var(--white-text);
+    background-color: var(--secondary-color);
+    /* background-color:  var(--white-text); */
     border-radius: 2px;
  
     font-size: 20px;
