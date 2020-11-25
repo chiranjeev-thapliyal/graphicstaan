@@ -117,6 +117,36 @@ header > .bg-video > .video2 {
   padding-left: 3rem;
 }
 
+.right-titles, .left-titles{
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+}
+
+.about > div > .know-more{
+  background: aliceblue;
+  /* width: inherit; */
+  /* height: 2rem; */
+  padding: 5px 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+
+/* .left-titles > .know-more{
+  margin-left: 6rem;
+}
+
+.right-titles > .know-more{
+  margin-right: 6rem;
+} */
+
+
 @-webkit-keyframes floating {
   0% {
     -webkit-transform: translateY(0px);
@@ -185,6 +215,7 @@ header > .bg-video > .video2 {
 @media only screen and (max-width: 900px) {
   .about .about-titles {
     font-size: var(--large-font-size);
+    padding-left: 0!important;
   }
 }
 
@@ -208,6 +239,7 @@ header > .bg-video > .video2 {
     text-align: center;
   }
 }
+
 
 @media only screen and (max-width: 350px) {
   .about .about-titles {

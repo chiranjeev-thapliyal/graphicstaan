@@ -2,9 +2,9 @@
 <%- include('../layout/navbar.ejs') %>
 <%- include('header.ejs') %>
 <div class="gradient-background">
-    <%- include('about', {id:'about1',title: 'bring your shop online',img: 'post_1.png'}) %>
-    <%- include('about', {id:'about2',title: 'connect with potential customers',img: 'web_template.png'}) %>
-    <%- include('about', {id:'about3',title: 'get in the digital world',img: 'digital.png'}) %>
+    <%- include('about', {id:'about1',title: 'bring your shop online',img: 'post_1.png', href: `/graphics/details`}) %>
+    <%- include('about', {id:'about2',title: 'connect with potential customers',img: 'web_template.png', href: `/web-development/details`}) %>
+    <%- include('about', {id:'about3',title: 'get in the digital world',img: 'digital.png', href: `/digital-marketing/details`}) %>
     <%- include('features.ejs') %>
     <%- include('contact.ejs') %>
     <%- include('testimonial.ejs') %>
