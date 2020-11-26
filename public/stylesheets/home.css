@@ -43,21 +43,27 @@ header > .bg-video > .video2 {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px){
   header{
-    /* height: 100vh; */
-    margin-top: 6rem;
-  }
-
-  .bg-video{
-    width: 100%;
-    height: 100%;
+    height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #17151b;
   }
+
+  header > .bg-video{
+    height: 34rem;
+  }
+
+  header > .bg-video > video{
+    height: 100%;
+    width: auto;
+  }
+
 }
+
+
+
 /* -------------------------------------------- HEADER SECTION ------------------------------------------ */
 
 /* -------------------------------------------- ABOUT SECTION ------------------------------------------ */
