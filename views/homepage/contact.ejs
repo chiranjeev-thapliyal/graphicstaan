@@ -28,24 +28,24 @@
             <div class="app-contact">CONTACT INFO : +91 8527818457</div>
           </div>
           <div class="screen-body-item">
-            <div class="app-form">
+            <form class="app-form" action="/contact/send" method="post" name="contact_form">
               <div class="app-form-group">
-                <input class="app-form-control" placeholder="NAME" />
+                <input class="app-form-control" name="NAME" placeholder="NAME" required />
               </div>
               <div class="app-form-group">
-                <input class="app-form-control" placeholder="EMAIL" />
+                <input class="app-form-control" name="EMAIL" placeholder="EMAIL" required/>
               </div>
               <div class="app-form-group">
-                <input class="app-form-control" placeholder="CONTACT NO" />
+                <input class="app-form-control" name="CONTACT" placeholder="CONTACT NO" required/>
               </div>
               <div class="app-form-group message">
-                <input class="app-form-control" placeholder="MESSAGE" />
+                <input class="app-form-control" name="MESSAGE" placeholder="MESSAGE" required/>
               </div>
               <div class="app-form-group buttons">
                 <button class="app-form-button">CANCEL</button>
-                <button class="app-form-button">SEND</button>
+                <button type="submit" class="app-form-button">SEND</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
