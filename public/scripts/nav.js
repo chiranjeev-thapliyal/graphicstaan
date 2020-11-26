@@ -8,11 +8,20 @@ hamburger.addEventListener('click', ()=>{
     links.forEach(link => {
         link.classList.toggle("fade");
     });
-
+  
     //Hamburger Animation
     hamburger.classList.toggle("toggle");
 });
 
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    links.forEach(link => {
+      link.classList.toggle("fade");
+    });
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("toggle");
+  });
+});
 
 // const body = document.querySelector('body');
 // const mode = document.querySelector('.toggleMode');
