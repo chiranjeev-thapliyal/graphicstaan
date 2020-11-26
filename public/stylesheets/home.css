@@ -259,7 +259,7 @@ header > .bg-video > .video2 {
 .heading_div {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -282,6 +282,12 @@ header > .bg-video > .video2 {
     var(--primary-color),
     var(--primary-color-dark)
   );
+}
+
+@media only screen and (max-width: 700px){
+  .heading_div{
+    display: block;
+  }
 }
 
 .graphicstaan-heading {

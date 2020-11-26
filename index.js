@@ -34,16 +34,17 @@ app.post("/contact/send", async (req, res) => {
         ],
         Subject: `Welcome ${name.toUpperCase()} to Graphicstaan`,
         TextPart: `Dear ${name}, we are a team of young professionals willing to help people with their digital needs!`,
-        HTMLPart: index.html,
+        HTMLPart: `<h2>Hi ${name}!</h2><br><h3>We are glad that you chose <a href="graphicstaan.in">Graphicstaan</a>, and we are eager to help you out!</h3>`,
       },
     ],
   });
-  try {
-    let response = await request;
+  request
+  .then(result => {
     res.status(200).send('<script>window.location.href="/";</script>');
-  } catch (err) {
-    throw new Error();
-  }
+  })
+  .catch(err => {
+    res.status(400).send('<script>window.location.href="/";</script>');
+  })
 });
 
 app.get("/", (req, res, next) => {
