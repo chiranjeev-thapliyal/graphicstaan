@@ -290,3 +290,17 @@
   }
   
   
+  @media only screen and (max-width: 700px){
+    .slider{
+      height: 50rem;
+    }
+    .slider__slide{
+      height: 50rem;
+    }
+    .slider__content{
+      right: 13rem;
+    }
+    .slider__content > h1{
+      font-size: 6rem;
+    }
+  }
