@@ -57,7 +57,7 @@ header > .bg-video > .video2 {
 
   header > .bg-video > video{
     height: 100%;
-    width: auto;
+    width: 100%;
   }
 
 }
