@@ -1,0 +1,178 @@
+<%- include('../layout/boilerplate', {stylesheets:[`<link rel="stylesheet" href="/stylesheets/app.css"/>`, `<link rel="stylesheet" href="/stylesheets/slider.css" />`]}) %> 
+<%- include('../layout/navbar') %>
+
+<header>
+  <!-- <div class="glider"> -->
+  <!-- <div><img src="/images/app/app1.jpg" alt="" /></div> -->
+  <!-- <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
+    <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
+    <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
+    <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
+    <div><img src="/images/app/mobile-head.jpg" alt="" /></div>
+  </div> -->
+  <%- include('../utility/slider', {images:[`/images/graphics/logo_slider.jpg`,
+  `/images/graphics/visiting_slider.jpg`,
+  `/images/graphics/letterhead_slider.jpg`],title:[`Logo`, `Visiting Card`, `Letter Head
+  `], br:[`Designing`,`Designing`, `Designing`]}) %>
+</header>
+
+<section class="about">
+  <h1 class="about-heading">Why you should hire a Graphic Designer?</h1>
+  <div class="description">
+    <span><i class="fas fa-check"></i>Saves Time</span> 
+    <br>
+    You have enough on your plate already. Do you really have to spend time trying to come up with designs for your logo, brochures or powerpoint templates? A graphic designer can come up with a design or format a marketing document in a quarter of the time it will take you to do it yourself.
+    <br>
+    <br><span><i class="fas fa-check"></i>Save Money</span> 
+    
+    <br>
+    A graphic designer will know the most cost effective ways to design your materials to keep your printing costs to a minimum. 
+    <br>
+    <br><span><i class="fas fa-check"></i>Help You Get the Results You Want</span> 
+    
+    <br>
+    Many clients have an idea of what they want their business materials to look like, but have no way to convey them. A designer will be able to get through your list of preferences and ensure that your end results will not only look the way you want but will help you achieve the goals you set out for your business materials.<br>
+    <br>
+  </div>
+  <div class="wrapper">
+    <!-- <h1>Parallax Flipping Cards</h1> -->
+    <div class="cols">
+      <%- include(`../utility/details_cards`, {title: `Logo Designing`, span: `Graphics`, description: `You can increase your sales!`, img: `/images/graphics/cards/card1.jpg`}) %> 
+      <%- include(`../utility/details_cards`, {title: `Visiting Card Designing`, span: `Graphics`, description: `You can increase your sales!`, img: `/images/graphics/cards/card2.jpg`}) %> 
+      <%- include(`../utility/details_cards`, {title: `Letter Head Designing`, span: `Graphics`, description: `You can increase your sales!`, img: `/images/graphics/cards/card3.jpg`}) %> 
+      <%- include(`../utility/details_cards`, {title: `Brochure Designing`, span: `Graphics`, description: `You can increase your sales!`, img: `/images/graphics/cards/card4.jpg`}) %> 
+      <%- include(`../utility/details_cards`, {title: `Poster Designing`, span: `Graphics`, description: `You can increase your sales!`, img: `/images/graphics/cards/card5.jpg`}) %> 
+      <%- include(`../utility/details_cards`, {title: `Booklet Designing`, span: `Graphics`, description: `You can increase your sales!`, img: `/images/graphics/cards/card6.jpg`}) %> 
+      <%- include(`../utility/details_cards`, {title: `Magazine Designing`, span: `Graphics`, description: `You can increase your sales!`, img: `/images/graphics/cards/card7.jpg`}) %> 
+      <%- include(`../utility/details_cards`, {title: `Others`, span: `Graphics`, description: `You can increase your sales!`, img: `/images/graphics/cards/card8.jpg`}) %> 
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div id="price">
+    <!--price tab-->
+    <div class="plan">
+      <div class="plan-inner">
+        <div class="entry-title">
+          <h3>Basic Plan</h3>
+          <div class="price">$25<!--<span>/PER CAR</span>--></div>
+        </div>
+        <div class="entry-content">
+          <ul>
+            <li><strong>1x</strong> option 1</li>
+            <li><strong>2x</strong> option 2</li>
+            <li><strong>3x</strong> option 3</li>
+            <li><strong>Free</strong> option 4</li>
+            <li><strong>Unlimited</strong> option 5</li>
+          </ul>
+        </div>
+        <div class="btn">
+          <a href="#">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- end of price tab-->
+    <!--price tab-->
+    <div class="plan basic">
+      <div class="plan-inner">
+        <div class="hot">hot</div>
+        <div class="entry-title">
+          <h3>Express Plan</h3>
+          <div class="price">$50<!--<span>/PER CAR</span>--></div>
+        </div>
+        <div class="entry-content">
+          <ul>
+            <li><strong>1x</strong> option 1</li>
+            <li><strong>2x</strong> option 2</li>
+            <li><strong>3x</strong> option 3</li>
+            <li><strong>Free</strong> option 4</li>
+            <li><strong>Unlimited</strong> option 5</li>
+          </ul>
+        </div>
+        <div class="btn">
+          <a href="#">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- end of price tab-->
+    <!--price tab-->
+    <div class="plan standard">
+      <div class="plan-inner">
+        <div class="entry-title">
+          <h3>Super Plan</h3>
+          <div class="price">$75<!--<span>/PER CAR</span>--></div>
+        </div>
+        <div class="entry-content">
+          <ul>
+            <li><strong>2x</strong> Free Entrance</li>
+            <li><strong>Free</strong> Snacks</li>
+            <li><strong>Custom</strong> Swags</li>
+            <li><strong>2x</strong> Certificate</li>
+            <li><strong>Free</strong> Wifi</li>
+          </ul>
+        </div>
+        <div class="btn">
+          <a href="#">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- end of price tab-->
+    <!--price tab-->
+    <div class="plan ultimite">
+      <div class="plan-inner">
+        <div class="entry-title">
+          <h3>Unlimited Plan</h3>
+          <div class="price">$100<!--<span>/PER Website</span>--></div>
+        </div>
+        <div class="entry-content">
+          <ul>
+            <li><strong>1x</strong> option 1</li>
+            <li><strong>2x</strong> option 2</li>
+            <li><strong>3x</strong> option 3</li>
+            <li><strong>Free</strong> option 4</li>
+            <li><strong>Unlimited</strong> option 5</li>
+          </ul>
+        </div>
+        <div class="btn">
+          <a href="#">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- end of price tab-->
+  </div>
+</section>
+
+<%- include('../layout/footer', {scripts:[`
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+`,``, `
+<script>
+  $(document).ready(function () {
+    for (var i = 1; i <= $(".slider__slide").length; i++) {
+      $(".slider__indicators").append(
+        '<div class="slider__indicator" data-slide="' + i + '"></div>'
+      );
+    }
+    setTimeout(function () {
+      $(".slider__wrap").addClass("slider__wrap--hacked");
+    }, 1000);
+  });
+
+  function goToSlide(number) {
+    $(".slider__slide").removeClass("slider__slide--active");
+    $(".slider__slide[data-slide=" + number + "]").addClass(
+      "slider__slide--active"
+    );
+  }
+
+  $(".slider__next, .go-to-next").on("click", function () {
+    var currentSlide = Number($(".slider__slide--active").data("slide"));
+    var totalSlides = $(".slider__slide").length;
+    currentSlide++;
+    if (currentSlide > totalSlides) {
+      currentSlide = 1;
+    }
+    goToSlide(currentSlide);
+  });
+</script>
+`]}) %>

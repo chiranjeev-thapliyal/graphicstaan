@@ -437,7 +437,7 @@ header > .bg-video > .video2 {
 
 .features > div > .card > .card-description {
   font-size: 1.3rem;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color: var(--black-text);
 }
 .features > div > .card:hover .card-description {
