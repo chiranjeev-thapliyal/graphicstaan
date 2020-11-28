@@ -1,5 +1,8 @@
-<%- include('../layout/boilerplate', {stylesheets:[`<link rel="stylesheet" href="/stylesheets/app.css"/>`, `<link rel="stylesheet" href="/stylesheets/slider.css" />`]}) %> 
-<%- include('../layout/navbar') %>
+<%- include('../layout/boilerplate', {stylesheets:[`<link
+  rel="stylesheet"
+  href="/stylesheets/app.css"
+/>`, `<link rel="stylesheet" href="/stylesheets/slider.css" />`]}) %> <%-
+include('../layout/navbar') %>
 
 <header>
   <!-- <div class="glider"> -->
@@ -17,22 +20,54 @@
 </header>
 
 <section class="about">
-  <h1 class="about-heading">Why do you need an App?</h1>
+  <h1 class="about-heading">Why make a Website for your business?</h1>
   <div class="description">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-    praesentium. Perspiciatis, corrupti itaque! Culpa officia velit aperiam quas
-    nulla quos et impedit obcaecati, perspiciatis vero quis accusantium
-    molestias voluptatibus deserunt.
+    <span><i class="fas fa-check"></i>More Profit</span>
+    <br />
+    Your website is your number one marketing asset because we live in a digital
+    age. Having a website will attract new customers to your business and make
+    you more money.
+    <br />
+    <br /><span
+      ><i class="fas fa-check"></i>A website makes you look professional</span
+    >
+
+    <br />
+    By now, consumers expect companies to have an online presence (including a
+    website) and will consider a company that DOESN’T have one as less
+    professional.The 21st century consumer is a skeptic; in fact, 56% of people
+    stated that they won’t trust a business without a website. Having a good
+    website instantly boosts your credibility as a legitimate business.
+    <br />
+    <br /><span
+      ><i class="fas fa-check"></i>It’s not as hard, or as expensive, as you
+      think.</span
+    >
+
+    <br />
+    You don’t need to be tech savvy to get a website. Many web development
+    companies have very simple signup processes which make the process quick and
+    painless for you.<br />
+    <br />
   </div>
   <div class="wrapper">
     <!-- <h1>Parallax Flipping Cards</h1> -->
     <div class="cols">
-      <%- include(`../utility/details_cards`, {title: `Increase Sales`, span: `App`, description: `You can increase your sales!`, img: `/images/app/app1.jpg`}) %> 
-      <%- include(`../utility/details_cards`, {title: `Increase Sales`, span: `App`, description: `You can increase your sales!`, img: `/images/app/app2.jpg`}) %> 
-      <%- include(`../utility/details_cards`, {title: `Increase Sales`, span: `App`, description: `You can increase your sales!`, img: `/images/app/app3.webp`}) %> 
-      <%- include(`../utility/details_cards`, {title: `Increase Sales`, span: `App`, description: `You can increase your sales!`, img: `/images/app/app-3.jpg`}) %> 
-      <%- include(`../utility/details_cards`, {title: `Increase Sales`, span: `App`, description: `You can increase your sales!`, img: `/images/app/mobile-head.jpg`}) %> 
-      <%- include(`../utility/details_cards`, {title: `Increase Sales`, span: `App`, description: `You can increase your sales!`, img: `/images/app/mobile-phone-3d.jpg`}) %> 
+      <%- include(`../utility/details_cards`, {title: `Increase Sales`, span:
+      `App`, description: `You can increase your sales!`, img:
+      `/images/app/app1.jpg`}) %> <%- include(`../utility/details_cards`,
+      {title: `Increase Sales`, span: `App`, description: `You can increase your
+      sales!`, img: `/images/app/app2.jpg`}) %> <%-
+      include(`../utility/details_cards`, {title: `Increase Sales`, span: `App`,
+      description: `You can increase your sales!`, img:
+      `/images/app/app3.webp`}) %> <%- include(`../utility/details_cards`,
+      {title: `Increase Sales`, span: `App`, description: `You can increase your
+      sales!`, img: `/images/app/app-3.jpg`}) %> <%-
+      include(`../utility/details_cards`, {title: `Increase Sales`, span: `App`,
+      description: `You can increase your sales!`, img:
+      `/images/app/mobile-head.jpg`}) %> <%- include(`../utility/details_cards`,
+      {title: `Increase Sales`, span: `App`, description: `You can increase your
+      sales!`, img: `/images/app/mobile-phone-3d.jpg`}) %>
     </div>
   </div>
 </section>

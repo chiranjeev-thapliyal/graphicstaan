@@ -39,6 +39,11 @@ header > .glider > div > img{
   color: var(--black-text);
   width: 90%;
   margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 22px 3px gray;
+  margin: 3rem auto;
+  background-color: var(--white-text);
   /* text-align: center; */
 }
 
@@ -178,6 +183,8 @@ header > .glider > div > img{
             transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
+            background-repeat: no-repeat;
+background-size: cover;
 }
 
 .container:hover .back{
