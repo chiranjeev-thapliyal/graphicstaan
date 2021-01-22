@@ -66,6 +66,17 @@
     //hide the preloader
     document.querySelector(".preloader").style.display = "none";
   }
+  function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.querySelector('.video-source').src = "/videos/graphicstaan-mobile.mp4";
+  } else {
+    document.querySelector('.video-source').src = "/videos/graphicstaan.mp4";
+  }
+}
+
+var x = window.matchMedia("(max-width: 400px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes 
 </script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/8.1.1/firebase-app.js"></script>

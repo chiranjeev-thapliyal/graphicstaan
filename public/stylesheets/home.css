@@ -39,30 +39,23 @@ header > .bg-video > video {
   /* height: 100%; */
 }
 
-header > .bg-video > .video2 {
-  width: 100%;
-}
-
-@media only screen and (max-width: 700px){
-  header{
+@media only screen and (max-width: 700px) {
+  header {
     height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  header > .bg-video{
+  header > .bg-video {
     height: 34rem;
   }
 
-  header > .bg-video > video{
-    height: 100%;
-    width: 100%;
+  header > .bg-video > video {
+    height: auto;
+    /* width: 100%; */
   }
-
 }
-
-
 
 /* -------------------------------------------- HEADER SECTION ------------------------------------------ */
 
@@ -123,13 +116,14 @@ header > .bg-video > .video2 {
   padding-left: 3rem;
 }
 
-.right-titles, .left-titles{
+.right-titles,
+.left-titles {
   display: flex;
   flex-direction: column;
   align-items: first baseline;
 }
 
-.about > div > .know-more{
+.about > div > .know-more {
   background: aliceblue;
   /* width: inherit; */
   /* height: 2rem; */
@@ -151,7 +145,6 @@ header > .bg-video > .video2 {
 .right-titles > .know-more{
   margin-right: 6rem;
 } */
-
 
 @-webkit-keyframes floating {
   0% {
@@ -221,7 +214,7 @@ header > .bg-video > .video2 {
 @media only screen and (max-width: 900px) {
   .about .about-titles {
     font-size: var(--large-font-size);
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
 }
 
@@ -245,7 +238,6 @@ header > .bg-video > .video2 {
     text-align: center;
   }
 }
-
 
 @media only screen and (max-width: 350px) {
   .about .about-titles {
@@ -284,8 +276,8 @@ header > .bg-video > .video2 {
   );
 }
 
-@media only screen and (max-width: 700px){
-  .heading_div{
+@media only screen and (max-width: 700px) {
+  .heading_div {
     display: block;
   }
 }
@@ -1212,8 +1204,8 @@ header > .bg-video > .video2 {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   width: 9rem;
-height: 9rem;
-object-fit: cover;
+  height: 9rem;
+  object-fit: cover;
 }
 .snip1447 .follow {
   margin-right: 6%;
