@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+const hostname = "0.0.0.0";
+
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -39,12 +41,12 @@ app.post("/contact/send", async (req, res) => {
     ],
   });
   request
-  .then(result => {
-    res.status(200).send('<script>window.location.href="/";</script>');
-  })
-  .catch(err => {
-    res.status(400).send('<script>window.location.href="/";</script>');
-  })
+    .then((result) => {
+      res.status(200).send('<script>window.location.href="/";</script>');
+    })
+    .catch((err) => {
+      res.status(400).send('<script>window.location.href="/";</script>');
+    });
 });
 
 app.get("/", (req, res, next) => {
@@ -60,6 +62,6 @@ app.get("*", (req, res, next) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
+app.listen(port, hostname, () => {
   console.log("App Started!");
 });
